@@ -1,13 +1,11 @@
+import Image from "next/image";
+
 export default function Header() {
     return (
         <header>
-            <nav className="flex flex-row whitespace-nowrap bg-slate-800 text-slate-50 h-14">
+            <nav className="flex flex-row whitespace-nowrap justify-between bg-slate-800 text-slate-50 h-14">
                 <div className="flex whitespace-nowrap flex-row items-center space-x-4">
-                    <img
-                        src="/logo.webp"
-                        alt="Logo"
-                        className="h-full w-auto"
-                    />
+                    <Image src="/logo.webp" alt="Logo" width={56} height={56} />
                     <h1 className="text-4xl">Mateo Vallée</h1>
                 </div>
                 <ul className="flex flex-row justify-around whitespace-nowrap items-center">
